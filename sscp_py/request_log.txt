@@ -1,0 +1,77 @@
+WARNING 2018-06-06 18:29:58,007 base Not Found: /checktestcase
+WARNING 2018-06-07 10:03:37,826 base Not Found: /checktestcase
+WARNING 2018-06-07 10:21:19,842 base Not Found: /checktestcase
+WARNING 2018-06-07 10:37:19,689 base Not Found: /checktestcase
+WARNING 2018-06-07 10:41:59,706 base Not Found: /checktestcase
+WARNING 2018-06-07 10:47:19,483 base Not Found: /newfilterrule/
+WARNING 2018-06-07 11:15:46,842 base Not Found: /newfilterrule/
+WARNING 2018-06-07 11:23:02,612 base Not Found: /newfilterrule/
+WARNING 2018-06-07 11:24:28,290 base Not Found: /newfilterrule/
+WARNING 2018-06-07 11:26:18,287 base Not Found: /newfilterrule/
+WARNING 2018-06-07 12:04:47,967 base Not Found: /checktestcase
+WARNING 2018-06-07 13:42:00,596 base Not Found: /checktestcase
+WARNING 2018-06-07 13:43:08,388 base Not Found: /checktestcase
+WARNING 2018-06-07 13:53:26,032 base Not Found: /checktestcase
+WARNING 2018-06-07 14:20:44,804 base Not Found: /checktestcase
+WARNING 2018-06-07 14:50:30,601 base Not Found: /newfilterrule/
+WARNING 2018-06-07 14:54:37,693 base Not Found: /newfilterrule/
+WARNING 2018-06-07 18:14:52,962 base Not Found: /newfilterrule/
+WARNING 2018-06-07 18:20:39,614 base Not Found: /newfilterrule/
+WARNING 2018-06-07 18:27:38,620 base Not Found: /checktestcase
+WARNING 2018-06-07 18:34:05,337 base Not Found: /checktestcase
+WARNING 2018-06-07 19:21:27,486 base Not Found: /checktestcase
+WARNING 2018-06-07 19:22:01,200 base Not Found: /checktestcase
+WARNING 2018-06-08 10:15:36,647 base Not Found: /checktestcase
+WARNING 2018-06-08 10:16:02,310 base Not Found: /checktestcase
+WARNING 2018-06-08 10:21:03,432 base Not Found: /checktestcase
+WARNING 2018-06-08 10:34:08,945 base Not Found: /checktestcase
+WARNING 2018-06-08 10:34:13,313 base Not Found: /checktestcase
+WARNING 2018-06-08 10:34:37,613 base Not Found: /checktestcase
+WARNING 2018-06-08 11:16:21,560 base Not Found: /checktestcase
+WARNING 2018-06-08 17:24:58,806 base Not Found: /checktestcase
+WARNING 2018-06-08 17:36:10,714 base Not Found: /checktestcase
+WARNING 2018-06-11 09:35:06,242 base Not Found: /checktestcase
+WARNING 2018-06-11 10:11:52,884 base Not Found: /checktestcase
+WARNING 2018-06-11 10:12:02,101 base Not Found: /checktestcase
+WARNING 2018-06-11 10:12:18,510 base Not Found: /checktestcase
+WARNING 2018-06-11 10:12:32,920 base Not Found: /checktestcase
+WARNING 2018-06-11 10:12:34,245 base Not Found: /checktestcase
+WARNING 2018-06-11 10:13:51,635 base Not Found: /checktestcase
+WARNING 2018-06-11 10:13:56,569 base Not Found: /checktestcase
+WARNING 2018-06-11 10:15:56,354 base Not Found: /checktestcase
+WARNING 2018-06-11 10:16:07,864 base Not Found: /checktestcase
+WARNING 2018-06-11 13:50:18,172 base Not Found: /newfilterrule/
+WARNING 2018-06-12 11:05:59,208 base Not Found: /newfilterrule/
+ERROR 2018-06-12 16:50:57,376 exception Internal Server Error: /question_robotid_zero/
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sscp_py/sscp_py/sscp_py/views.py", line 95, in QAQuestion_RobotId_zero
+    status=_status, top=_top, com=com, robot_list=r_srinit, cos_list=cos_wordvectors)
+TypeError: qafun_robotid_zero() got an unexpected keyword argument 'knowledgeId'
+ERROR 2018-06-12 16:51:26,245 exception Internal Server Error: /question_robotid_zero/
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sscp_py/sscp_py/sscp_py/views.py", line 95, in QAQuestion_RobotId_zero
+    status=_status, top=_top, com=com, robot_list=r_srinit, cos_list=cos_wordvectors)
+TypeError: qafun_robotid_zero() got an unexpected keyword argument 'knowledgeId'
+ERROR 2018-06-12 17:07:25,346 exception Internal Server Error: /question_robotid_zero/
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/python3/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sscp_py/sscp_py/sscp_py/views.py", line 95, in QAQuestion_RobotId_zero
+    status=_status, top=_top, com=com, robot_list=r_srinit, cos_list=cos_wordvectors)
+TypeError: qafun_robotid_zero() got an unexpected keyword argument 'knowledgeId'
