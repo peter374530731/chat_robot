@@ -194,7 +194,7 @@ class HandleMsg(object):
             m_findalls = r.findall(mesg)
             for m_findall in m_findalls:
                 replacement_list.append({"rule": m_findall, "replace_val": rule[1]})
-                result_list.append({"type":"1","word":m_findall,"replace_val":rule[1]})
+                result_list.append({"type":"1", "word":m_findall, "replace_val":rule[1]})
             mesg, n = r.subn(rule[1], mesg)
 
         # 删除规则
@@ -204,7 +204,7 @@ class HandleMsg(object):
             m_findalls = r.findall(mesg)
             for m_findall in m_findalls:
                 replacement_list.append({"rule": m_findall, "replace_val": ''})
-                result_list.append({"type":"1","word":m_findall,"replace_val":''})
+                result_list.append({"type":"1", "word":m_findall, "replace_val":''})
             mesg, n = r.subn('', mesg)
 
         logger.info("replacement_list in %s" % str(replacement_list))

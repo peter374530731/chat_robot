@@ -28,7 +28,7 @@ def qafun(_question, robotId, status, top, com, robot_list, cos_list):
 
     try:
         get_category = common.getCategory(_question)  # 场景匹配
-
+        print("get123", get_category)
         # 匹配到场景以后将返回信息中添加一条场景信息
         if get_category['content'] != '':
             # 过滤词

@@ -75,3 +75,101 @@ Traceback (most recent call last):
   File "/home/sscp_py/sscp_py/sscp_py/views.py", line 95, in QAQuestion_RobotId_zero
     status=_status, top=_top, com=com, robot_list=r_srinit, cos_list=cos_wordvectors)
 TypeError: qafun_robotid_zero() got an unexpected keyword argument 'knowledgeId'
+WARNING 2018-06-14 11:32:05,288 base Not Found: /dbmessage/change/
+WARNING 2018-06-14 11:32:05,387 base Not Found: /favicon.ico
+WARNING 2018-06-14 11:32:28,432 base Not Found: /
+WARNING 2018-06-14 11:32:35,374 base Not Found: /
+WARNING 2018-06-14 11:32:43,298 base Not Found: /
+WARNING 2018-06-14 11:34:35,160 base Not Found: /
+WARNING 2018-06-14 11:34:59,868 base Not Found: /
+WARNING 2018-06-14 11:39:21,570 base Not Found: /sscp_py
+WARNING 2018-06-14 11:39:42,101 base Not Found: /config
+ERROR 2018-06-14 11:39:58,476 exception Internal Server Error: /config/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.Config didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 11:47:40,229 exception Internal Server Error: /question/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.QAQuestion didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 11:54:31,599 exception Internal Server Error: /testcase/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.TestCase didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 11:55:15,018 exception Internal Server Error: /testcase/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.TestCase didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 12:05:05,113 exception Internal Server Error: /testcase/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.TestCase didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 12:52:46,738 exception Internal Server Error: /testcase/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.TestCase didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 12:54:49,233 exception Internal Server Error: /testcase/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.TestCase didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 12:58:18,878 exception Internal Server Error: /testcase/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.TestCase didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 13:00:29,882 exception Internal Server Error: /testcase/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.TestCase didn't return an HttpResponse object. It returned None instead.
+ERROR 2018-06-14 14:32:43,262 exception Internal Server Error: /testcase/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.TestCase didn't return an HttpResponse object. It returned None instead.
+WARNING 2018-06-14 15:52:14,700 base Not Found: /
+WARNING 2018-06-14 15:52:14,774 base Not Found: /favicon.ico
+WARNING 2018-06-22 10:48:36,495 base Not Found: /
+WARNING 2018-06-22 10:48:41,457 base Not Found: /
+WARNING 2018-06-22 10:48:43,734 base Not Found: /
+WARNING 2018-06-22 10:51:04,100 base Not Found: /
+WARNING 2018-06-22 10:51:06,632 base Not Found: /
+WARNING 2018-06-22 10:51:11,206 base Not Found: /
+WARNING 2018-06-22 10:51:24,015 base Not Found: /
+WARNING 2018-06-22 10:51:30,572 base Not Found: /
+WARNING 2018-06-22 10:51:37,337 base Not Found: /
+ERROR 2018-06-22 14:16:11,019 exception Internal Server Error: /question/
+Traceback (most recent call last):
+  File "/home/peter18/文档/peter/Peter_classify(CNN)(double)/Peter_classify(CNN)(double)/Peter_classify(CNN)/venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/peter18/文档/peter/Peter_classify(CNN)(double)/Peter_classify(CNN)(double)/Peter_classify(CNN)/venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 139, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view sscp_py.views.QAQuestion didn't return an HttpResponse object. It returned None instead.
+WARNING 2018-06-22 14:16:11,464 base Not Found: /favicon.ico

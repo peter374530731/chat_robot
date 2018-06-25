@@ -14,12 +14,12 @@ p2 = re.compile(r'[^(\u4e00-\u9fa5)|\[|\]]')
 
 logging.basicConfig(format='%(asctime)s: %(levelname)s : %(message)s', level=logging.INFO)
 
-w2v = word2vec.Word2Vec.load('/home/sscp_py/sscp_py/sscp_py/viewfunction/talkmodel/talkmodel_04_0524')
+w2v = word2vec.Word2Vec.load("/home/peter18/文档/wj/sscp_py/sscp_py/viewfunction/talkmodel/talkmodel_04_0524")
 wordSize = 200
 def sent2vec(s):
     words = s
     M = []
-    with open("/home/sscp_py/sscp_py/sscp_py/viewfunction/talkmodel/words.txt", 'a') as f:           # 保存词向量模型里没有的词
+    with open("/home/peter18/文档/wj/sscp_py/sscp_py/viewfunction/talkmodel/words.txt", 'a') as f:           # 保存词向量模型里没有的词
         for w in words:
             try:
                 if w == ' ':

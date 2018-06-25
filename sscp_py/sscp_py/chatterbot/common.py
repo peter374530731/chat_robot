@@ -49,10 +49,16 @@ def find3max(arr):
 
 def allindict(segs, dt):
     try:
+        ''''
         for seg in segs:
             if seg not in dt:
                 return False
         return True
+        '''
+        for seg in segs:
+            if seg in dt:
+                return True
+        return False
     except Exception as e:
         logger.error("ERROR:%s" % str(e))
 
@@ -73,7 +79,7 @@ def getCategory2(content):
 
         stopwords = ['的','了', '呢', '吗', '吧', '嗯', '恩', '哦','哒','呐','额','啊',
                             '呀','滴','哟','么','哈','～','嘛','咧','嘞','呃',' ',
-                     'good','嗨','帮助','太','劳','劳你','劳您','实在','you','让']
+                     'good','嗨','帮助','太','劳','劳你','劳您','实在','you','让', '啦']
 
         content_copy = []
         for content_item in content:
@@ -111,8 +117,8 @@ def getCategory2(content):
                           'morning', 'afternoon', 'noon','enenging'], '问候'],
                         [['谢', '谢谢', '好谢谢', '多谢', '感谢你', '感谢您', '感谢', '谢谢您', '谢谢你', '非常感谢',
                           '劳驾', 'thank', '费心', '3q', '过意不去', '辛苦', '拜托', '麻烦'], '感谢'],
-                        [['好'],'结束语']]
-
+                        [['好', '恩好', '知道'], '结束语']]
+        print('segs:', segs)
         for rule in preProcRules:
             if (allindict(segs, rule[0])):
                 return rule[1]
@@ -137,11 +143,12 @@ def getCategory(content):
     re_config = re.compile(r'[^(\u4e00-\u9fa5)|(a-z)|(A-Z)|(0-9)]')
     get_list = re_config.split(content)
     split_list=[]
-
+    print("get_list",get_list)
     for get_item in get_list:
         if len(get_item)>0:
             split_list.append(get_item)
-
+    print(split_list)
+    print(len(split_list))
     if len(split_list) >= 3:
         _msg = ''.join([split_list[0], split_list[1]])
         first_category = getCategory2(_msg)
@@ -163,14 +170,26 @@ def getCategory(content):
             return_str = ''
             for i in range(2,len(split_list)):
                 return_str = return_str + " " + split_list[i]
-            return_dict['content'] = return_str
+            third_category = getCategory2(return_str)
+            if third_category=='':
+                return_dict['content'] = return_str
+
+            for i in split_list:
+                if getCategory2(i) == '':
+                    return_dict['content'] = content
+                    return return_dict
+
+            return_dict['category']= third_category
             return return_dict
 
     elif len(split_list) ==2:
         _msg = ''.join([split_list[0], split_list[1]])
+        print("msg", _msg)
         first_category = getCategory2(_msg)
+        print('first_category', first_category)
         if first_category == '':
             second_category = getCategory2(split_list[0])
+            print('second_category', second_category)
             if second_category == '':
                 return_dict['content'] = content
                 return return_dict
@@ -178,6 +197,10 @@ def getCategory(content):
                 return_dict['content'] = split_list[1]
                 return return_dict
         else:
+            for i in split_list:
+                if getCategory2(i)=='':
+                    return_dict['content'] = content
+                    return return_dict
             return_dict['category'] = first_category
             return return_dict
 
